@@ -47,25 +47,26 @@ def to_html_section(emoji: str, title: str, entry: str) -> str:
     return f'<h3>{emoji} {title}</h3>\n' + "\n".join(html)
 
 def send_email():
-    # 1) Determine dates
+    # 1) Determine “today” in AEST
     now_utc = datetime.now(timezone.utc)
     aest    = now_utc + timedelta(hours=10)
-    run_date_full = aest.strftime("%Y-%m-%d")  # for subjects/headings
-    run_mmdd      = aest.strftime("%m-%d")     # for CSV lookup
+    run_date_full = aest.strftime("%Y-%m-%d")  # for subject/header
+    run_ddmm      = aest.strftime("%d-%m")     # for Australian DD-MM lookup
 
     stoic_raw = dad_raw = med_raw = None
-    # 2) Read CSV, matching month-day
+
+    # 2) Read CSV, matching Australian day-month
     with open(CSV_PATH, newline='', encoding='utf-8', errors='replace') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            if row['Date'].strip() == run_mmdd:
+            if row['Date'].strip() == run_ddmm:
                 stoic_raw = row.get('Daily Stoic', '')
                 dad_raw   = row.get('Daily Dad', '')
                 med_raw   = row.get('Todays meditation', '')
                 break
 
     if stoic_raw is None:
-        print(f"No entry found for {run_mmdd}")
+        print(f"No entry found for {run_ddmm}")
         return
 
     # 3) Top heading
