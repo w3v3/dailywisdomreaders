@@ -55,6 +55,7 @@ def to_html_section(emoji: str, title: str, entry: str) -> str:
 def send_email(for_date: str):
     stoic_raw = dad_raw = med_raw = None
 
+    # 1) Read the CSV for today’s entries
     with open(CSV_PATH, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
@@ -68,14 +69,21 @@ def send_email(for_date: str):
         print(f"No entry found for {for_date}")
         return
 
-    # Build HTML for each section
+    # 2) Build the top heading
+    formatted_date = datetime.strptime(for_date, "%Y-%m-%d") \
+                             .strftime("%A, %B %d, %Y")
+    header_html = f'<h2>These are your readings and meditations for {formatted_date}</h2>'
+
+    # 3) Build HTML for each section
     stoic_html = to_html_section("🧘‍♂️", "Daily Stoic", clean_paragraphs(stoic_raw))
     dad_html   = to_html_section("👨‍👧", "Daily Dad",   clean_paragraphs(dad_raw))
     med_html   = to_html_section("✍️",   "Today’s Meditation", clean_paragraphs(med_raw))
 
+    # 4) Assemble full HTML body
     html_body = f"""\
 <html>
   <body style="font-family: sans-serif; line-height:1.4;">
+    {header_html}
     {stoic_html}
     <hr/>
     {dad_html}
@@ -85,8 +93,9 @@ def send_email(for_date: str):
 </html>
 """
 
+    # 5) Compose and send
     msg = MIMEText(html_body, 'html')
-    subject = datetime.strptime(for_date, "%Y-%m-%d")\
+    subject = datetime.strptime(for_date, "%Y-%m-%d") \
                       .strftime("Daily Reflection – %A, %B %d, %Y")
     msg['Subject'] = subject
     msg['From']    = EMAIL_FROM
