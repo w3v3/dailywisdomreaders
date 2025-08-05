@@ -5,7 +5,7 @@ on:
     # Morning at 07:15 AEST (UTC+10 → 21:15 UTC previous day)
     - cron: '15 21 * * *'
     
-    - cron: '53 7 * * *'
+    - cron: '00 8 * * *'
   workflow_dispatch:   # allows you to manually trigger from the UI
 
 jobs:
