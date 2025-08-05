@@ -3,7 +3,7 @@ name: Daily Reflection
 on:
   schedule:
     - cron: '15 21 * * *'
-    - cron: '04 8 * * *'
+    - cron: '07 8 * * *'
   workflow_dispatch:
 
 jobs:
