@@ -8,13 +8,13 @@ from datetime import datetime
 from wordfreq import zipf_frequency
 
 # === CONFIGURATION ===
-CSV_PATH       = "daily_readings_with_meditation.csv"  # now points at your new CSV
-EMAIL_FROM     = os.environ.get("EMAIL_FROM", "daily.stoic.wisdom.readings@gmail.com")
-EMAIL_TO       = os.environ.get("EMAIL_TO", "steve@thegoodnumbers.com.au")
-SMTP_SERVER    = os.environ.get("SMTP_SERVER", "smtp.gmail.com")
-SMTP_PORT      = int(os.environ.get("SMTP_PORT", 587))
-EMAIL_USERNAME = os.environ.get("EMAIL_USERNAME", EMAIL_FROM)
-EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "your_smtp_password_or_key")
+CSV_PATH       = "daily_readings_with_meditation.csv"  # Ensure this CSV is in the same folder
+EMAIL_FROM     = "daily.stoic.wisdom.readings@gmail.com"
+EMAIL_TO       = "steve@thegoodnumbers.com.au"
+SMTP_SERVER    = "smtp.gmail.com"
+SMTP_PORT      = 587
+EMAIL_USERNAME = "daily.stoic.wisdom.readings@gmail.com"
+EMAIL_PASSWORD = "ohov qtwt gnar sxwb"  # Use an App Password if using Gmail with 2FA
 # ======================
 
 def is_english_word(word: str, min_freq: float = 3.0) -> bool:
