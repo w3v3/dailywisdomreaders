@@ -1,9 +1,13 @@
 name: Daily Reflection
 
 on:
+  on:
   schedule:
-    # Runs at 07:15 AEST (UTC+10) → 21:15 UTC previous day
-    - cron:  "15 21 * * *"
+    - cron: "15 21 * * *"   # 07:15 AEST
+    - cron: "45 7 * * *"    # 17:45 AEST (5:45 PM AEST → 07:45 UTC)
+
+  workflow_dispatch:
+
   workflow_dispatch:       # allows manual trigger
 
 jobs:
