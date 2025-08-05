@@ -107,7 +107,7 @@ def send_email(for_date: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Send Daily Reflection email")
-    parser.add_argument("--date", help="YYYY-MM-DD to test (defaults to today)", default=None)
+    parser.add_argument("--date", help="YYYY-MM-DD to test (defaults to today in AEST)", default=None)
     args = parser.parse_args()
 
     if args.date:
@@ -118,6 +118,10 @@ if __name__ == "__main__":
             print("Invalid --date format, use YYYY-MM-DD")
             exit(1)
     else:
-        run_date = datetime.now().strftime("%Y-%m-%d")
+        # Determine current date in AEST (UTC+10)
+        from datetime import timezone, timedelta
+        utc_now = datetime.now(timezone.utc)
+        aest_now = utc_now + timedelta(hours=10)
+        run_date = aest_now.strftime("%Y-%m-%d")
 
     send_email(run_date)
