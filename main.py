@@ -55,8 +55,8 @@ def to_html_section(emoji: str, title: str, entry: str) -> str:
 def send_email(for_date: str):
     stoic_raw = dad_raw = med_raw = None
 
-    # 1) Read the CSV for today’s entries
-    with open(CSV_PATH, newline='', encoding='utf-8') as csvfile:
+    # 1) Read the CSV for today’s entries, using cp1252 to handle em-dashes and smart quotes
+    with open(CSV_PATH, newline='', encoding='cp1252') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row['Date'] == for_date:
