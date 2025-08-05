@@ -1,0 +1,33 @@
+name: Daily Reflection
+
+on:
+  schedule:
+    # Runs at 07:15 AEST (UTC+10) → 21:15 UTC previous day
+    - cron:  "15 21 * * *"
+  workflow_dispatch:       # allows manual trigger
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install wordfreq
+
+      - name: Send daily reflection email
+        env:
+          EMAIL_FROM:      ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO:        ${{ secrets.EMAIL_TO }}
+          SMTP_SERVER:     ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:       ${{ secrets.SMTP_PORT }}
+          EMAIL_USERNAME:  ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD:  ${{ secrets.EMAIL_PASSWORD }}
+        run: python main.py
