@@ -1,21 +1,19 @@
 name: Daily Reflection
 
 on:
-  on:
   schedule:
-    - cron: "15 21 * * *"   # 07:15 AEST
-    - cron: "45 7 * * *"    # 17:45 AEST (5:45 PM AEST → 07:45 UTC)
-
-  workflow_dispatch:
-
-  workflow_dispatch:       # allows manual trigger
+    # Morning at 07:15 AEST (UTC+10 → 21:15 UTC previous day)
+    - cron: '15 21 * * *'
+    
+    - cron: '50 7 * * *'
+  workflow_dispatch:   # allows you to manually trigger from the UI
 
 jobs:
   send:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out the repo
+      - name: Check out code
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -26,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: pip install wordfreq
 
-      - name: Send daily reflection email
+      - name: Send daily reflection
         env:
           EMAIL_FROM:      ${{ secrets.EMAIL_FROM }}
           EMAIL_TO:        ${{ secrets.EMAIL_TO }}
