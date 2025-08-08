@@ -1,140 +1,166 @@
-import csv
-import os
-import re
-import smtplib
-import argparse
+#!/usr/bin/env python3
+import csv, re, smtplib, argparse
 from email.mime.text import MIMEText
 from datetime import datetime, timezone, timedelta
 from wordfreq import zipf_frequency
 
-# === CONFIGURATION ===
-CSV_PATH       = "daily_readings_with_meditation.csv"  # now holds Date as DD/MM/YYYY
+# — CONFIGURATION —
+CSV_PATH       = "Readings.csv"
 EMAIL_FROM     = "daily.stoic.wisdom.readings@gmail.com"
 EMAIL_TO       = "steve@thegoodnumbers.com.au"
 SMTP_SERVER    = "smtp.gmail.com"
 SMTP_PORT      = 587
-EMAIL_USERNAME = "daily.stoic.wisdom.readings@gmail.com"
-EMAIL_PASSWORD = "ohov qtwt gnar sxwb"  # Use an App Password if using Gmail with 2FA
-# ======================
+EMAIL_USER     = "daily.stoic.wisdom.readings@gmail.com"
+EMAIL_PASS     = "ohov qtwt gnar sxwb"
+# ——————
 
-def is_english_word(word: str, min_freq: float = 3.0) -> bool:
-    """Return True if `word` occurs frequently enough in English."""
-    return zipf_frequency(word.lower(), 'en') >= min_freq
+def is_english_word(w, min_freq=3.0):
+    return zipf_frequency(w.lower(), 'en') >= min_freq
 
-def clean_paragraphs(raw: str) -> str:
-    """Fix stray fragments, normalize whitespace, and preserve paragraphs."""
-    paras = re.split(r'\n{2,}', raw)
+def clean_paragraphs(text):
+    """
+    Split into paragraphs, merge stray fragments, normalize whitespace,
+    style em-dash, convert ALL-CAPS → Title Case.
+    """
     out = []
-    for p in paras:
-        text = p.strip()
-        if not text:
-            continue
+    for p in re.split(r'\n{2,}', text or ""):
+        t = p.strip()
+        if not t: continue
 
-        def maybe_merge(m):
-            letter, rest = m.group(1), m.group(2)
-            cand = letter + rest
+        # merge stray letters into words
+        def mrg(m):
+            cand = m.group(1)+m.group(2)
             return cand if is_english_word(cand) else m.group(0)
+        t = re.sub(r'\b([A-Z])\s+([A-Za-z]{2,})', mrg, t)
 
-        text = re.sub(r'\b([A-Z])\s+([A-Za-z]{2,})', maybe_merge, text)
-        text = re.sub(r'\s+', ' ', text)
-        if text.startswith('—'):
-            core = text.lstrip('—').strip()
+        t = re.sub(r'\s+', ' ', t)  # normalize spaces
+
+        if t.startswith('—'):       # em-dash styling
+            core = t.lstrip('—').strip()
             core = re.sub(r'\s+,', ',', core).title()
-            text = '— ' + core
-        out.append(text)
-    return "\n\n".join(out)
+            t = '— ' + core
 
-def to_html_section(emoji: str, title: str, entry: str) -> str:
-    """Wrap cleaned entry in HTML, bolding the first paragraph."""
-    paras = entry.split("\n\n")
-    html = [f'<p><strong>{paras[0]}</strong></p>'] if paras else []
-    for para in paras[1:]:
-        html.append(f'<p>{para}</p>')
-    return f'<h3>{emoji} {title}</h3>\n' + "\n".join(html)
+        # ALL CAPS → Title Case
+        if t.upper()==t and re.search(r'[A-Z]', t):
+            t = t.title()
 
-def send_email(override_date: str = None):
-    # 1) Determine “today” in AEST or use override
+        out.append(t)
+    return out
+
+def to_html_section(emoji, title, paras):
+    """Daily sections: <h3> header, first <p><strong>, rest <p>."""
+    html = [f'<h3 style="margin-bottom:0.3em">{emoji} {title}</h3>']
+    for i,p in enumerate(paras):
+        if i==0:
+            html.append(f'<p><strong>{p}</strong></p>')
+        else:
+            html.append(f'<p>{p}</p>')
+    return "\n".join(html)
+
+def to_html_weekly(emoji, title, raw):
+    """
+    Weekly section: split on lines, first line=WEEK I (bold),
+    second line= subtitle, ornament, then body paras.
+    """
+    lines = [ln.strip() for ln in raw.splitlines() if ln.strip()]
+    week_num   = lines[0] if len(lines)>0 else ""
+    week_title = lines[1] if len(lines)>1 else ""
+    # the rest lines form a single block, re-join then re-split into paragraphs
+    body_text = "\n\n".join(lines[2:]) if len(lines)>2 else ""
+    paras     = clean_paragraphs(body_text)
+
+    html = []
+    html.append(f'<h3 style="margin-bottom:0.3em">{emoji} {title}</h3>')
+    if week_num:
+        html.append(f'<p><strong>{week_num}</strong></p>')
+    if week_title:
+        html.append(f'<p><em>{week_title}</em></p>')
+    # centered ornament
+    html.append('<p style="text-align:center; margin:0.5em 0;">❧</p>')
+    for p in paras:
+        html.append(f'<p>{p}</p>')
+    return "\n".join(html)
+
+def send_email(override_date=None):
+    # 1) figure out the date in AEST
     if override_date:
         try:
-            d_override = datetime.strptime(override_date, "%Y-%m-%d")
+            ref = datetime.strptime(override_date, "%Y-%m-%d").date()
         except ValueError:
-            print("Invalid override date—use YYYY-MM-DD")
-            return
-        run_day   = d_override.day
-        run_month = d_override.month
-        run_date_full = d_override.strftime("%Y-%m-%d")
-        aest = d_override  # for heading formatting
+            print("Invalid --date, use YYYY-MM-DD"); return
     else:
         now_utc = datetime.now(timezone.utc)
-        aest    = now_utc + timedelta(hours=10)
-        run_day   = aest.day
-        run_month = aest.month
-        run_date_full = aest.strftime("%Y-%m-%d")
+        ref = (now_utc + timedelta(hours=10)).date()
 
-    # 2) Read CSV, parse Date as DD/MM/YYYY and match only day/month
-    stoic_raw = dad_raw = med_raw = None
-    with open(CSV_PATH, newline='', encoding='utf-8', errors='replace') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
+    md = (ref.month, ref.day)
+
+    # 2) load CSV and find matching row (month+day)
+    row = None
+    with open(CSV_PATH, encoding="utf-8-sig", newline="") as f:
+        for r in csv.DictReader(f):
+            parts = r.get("Date","").split("/")
+            if len(parts)!=3: continue
             try:
-                d = datetime.strptime(row['Date'].strip(), "%d/%m/%Y")
-            except (ValueError, KeyError):
+                d,m,y = map(int, parts)
+            except:
                 continue
-            if d.day == run_day and d.month == run_month:
-                stoic_raw = row.get('Daily Stoic', '')
-                dad_raw   = row.get('Daily Dad', '')
-                med_raw   = row.get('Todays meditation', '')
+            if (m,d)==md:
+                row = r
                 break
 
-    if stoic_raw is None:
-        print(f"No entry found for {run_day:02d}/{run_month:02d}")
+    if not row or not row.get("Daily Stoic","").strip():
+        print(f"No daily entry for {ref.strftime('%d/%m')}")
         return
 
-    # 3) Build the top heading
-    formatted = aest.strftime("%A, %B %d, %Y")
-    header_html = f'<h2>These are your readings and meditations for {formatted}</h2>'
+    # 3) extract fields
+    stoic   = row["Daily Stoic"]
+    dad     = row["Daily Dad"]
+    thought = row["Todays Thought"]
+    week    = row.get("Week","").strip()
 
-    # 4) Build HTML for each section
-    stoic_html = to_html_section("🧘‍♂️", "Daily Stoic", clean_paragraphs(stoic_raw))
-    dad_html   = to_html_section("👨‍👧", "Daily Dad",   clean_paragraphs(dad_raw))
-    med_html   = to_html_section("✍️",   "Today’s Meditation", clean_paragraphs(med_raw))
+    # 4) build subject and top header
+    subject     = ref.strftime("Daily Reflection – %A, %B %d, %Y")
+    header_html = f'<h2>These are your readings and meditations for {ref.strftime("%A, %B %d, %Y")}</h2>'
 
-    # 5) Assemble full HTML body
-    html_body = f"""\
-<html>
-  <body style="font-family: sans-serif; line-height:1.4;">
-    {header_html}
-    {stoic_html}
-    <hr/>
-    {dad_html}
-    <hr/>
-    {med_html}
-  </body>
-</html>
-"""
+    # 5) assemble HTML
+    parts = []
+    if week:
+        parts.append(to_html_weekly("📅", "Weekly Reflection", week))
+        parts.append("<hr/>")
 
-    # 6) Compose and send
-    msg = MIMEText(html_body, 'html')
-    msg['Subject'] = datetime.strptime(run_date_full, "%Y-%m-%d")\
-                             .strftime("Daily Reflection – %A, %B %d, %Y")
-    msg['From'] = EMAIL_FROM
-    msg['To']   = EMAIL_TO
+    parts.append(to_html_section("🧘‍♂️","Daily Stoic",       clean_paragraphs(stoic)))
+    parts.append("<hr/>")
+    parts.append(to_html_section("👨‍👧","Daily Dad",         clean_paragraphs(dad)))
+    parts.append("<hr/>")
+    parts.append(to_html_section("✍️",   "Today’s Thought", clean_paragraphs(thought)))
+
+    if parts and parts[-1]=="<hr/>":
+        parts.pop()
+
+    html_body = (
+        "<html><body style='font-family:sans-serif;line-height:1.4'>"
+        + header_html + "\n"
+        + "\n".join(parts) +
+        "</body></html>"
+    )
+
+    # 6) send it
+    msg = MIMEText(html_body, "html")
+    msg["Subject"] = subject
+    msg["From"]    = EMAIL_FROM
+    msg["To"]      = EMAIL_TO
 
     try:
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as smtp:
             smtp.starttls()
-            smtp.login(EMAIL_USERNAME, EMAIL_PASSWORD)
+            smtp.login(EMAIL_USER, EMAIL_PASS)
             smtp.send_message(msg)
-        print(f"Email sent for {formatted}")
+        print(f"Email sent: {subject}")
     except Exception as e:
-        print(f"Failed to send email: {e}")
+        print("Failed to send email:", e)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Send Daily Reflection email")
-    parser.add_argument(
-        "--date",
-        help="Override run date (YYYY-MM-DD)",
-        default=None
-    )
-    args = parser.parse_args()
+if __name__=="__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--date", help="YYYY-MM-DD override", default=None)
+    args = p.parse_args()
     send_email(args.date)
