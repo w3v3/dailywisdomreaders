@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block header %}
+<div class="date-header">
+    <h1>{{ date }}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="tabs">
+        {% if reading.has_weekly %}
+        <button class="tab">📅 Weekly</button>
+        {% endif %}
+        <button class="tab">🧘‍♂️ Daily Stoic</button>
+        <button class="tab">👨‍👧 Daily Dad</button>
+        <button class="tab">✍️ Today's Thought</button>
+    </div>
+    
+    {% if reading.has_weekly %}
+    <div class="tab-content">
+        <div class="section-title">{{ reading.weekly.title }}</div>
+        {% if reading.weekly.subtitle %}
+        <div class="section-subtitle">{{ reading.weekly.subtitle }}</div>
+        {% endif %}
+        {% if reading.weekly.content %}
+        <div class="section-content">{{ reading.weekly.content | safe }}</div>
+        {% endif %}
+    </div>
+    {% endif %}
+    
+    <div class="tab-content">
+        <div class="section-title">{{ reading.daily_stoic.title }}</div>
+        {% if reading.daily_stoic.subtitle %}
+        <div class="section-subtitle">{{ reading.daily_stoic.subtitle }}</div>
+        {% endif %}
+        {% if reading.daily_stoic.content %}
+        <div class="section-content">{{ reading.daily_stoic.content | safe }}</div>
+        {% endif %}
+    </div>
+    
+    <div class="tab-content">
+        <div class="section-title">{{ reading.daily_dad.title }}</div>
+        {% if reading.daily_dad.subtitle %}
+        <div class="section-subtitle">{{ reading.daily_dad.subtitle }}</div>
+        {% endif %}
+        {% if reading.daily_dad.content %}
+        <div class="section-content">{{ reading.daily_dad.content | safe }}</div>
+        {% endif %}
+    </div>
+    
+    <div class="tab-content">
+        <div class="section-title">{{ reading.todays_thought.title }}</div>
+        {% if reading.todays_thought.subtitle %}
+        <div class="section-subtitle">{{ reading.todays_thought.subtitle }}</div>
+        {% endif %}
+        {% if reading.todays_thought.content %}
+        <div class="section-content">{{ reading.todays_thought.content | safe }}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

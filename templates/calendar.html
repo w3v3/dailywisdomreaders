@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h1>📅 Available Readings</h1>
+{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+        {% for date in dates %}
+        <a href="/date/{{ date | date_url }}" 
+           style="padding: 15px; background: #f8f9fa; border-radius: 8px; text-decoration: none; color: #333; border: 1px solid #dee2e6; transition: all 0.3s ease;">
+            {{ date }}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
