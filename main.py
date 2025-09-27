@@ -11,7 +11,7 @@ from wordfreq import zipf_frequency
 # ========= CONFIG =========
 CSV_PATH       = "Readings.csv"  # Date as DD/MM/YYYY
 EMAIL_FROM     = "daily.stoic.wisdom.readings@gmail.com"
-EMAIL_TO       = "steve@thegoodnumbers.com.au"
+EMAIL_TO       = "steve@thegoodnumbers.com.au, readlater.dggtboab4vm@instapaper.com"
 SMTP_SERVER    = "smtp.gmail.com"
 SMTP_PORT      = 587
 EMAIL_USER     = "daily.stoic.wisdom.readings@gmail.com"
