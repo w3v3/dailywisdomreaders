@@ -218,10 +218,13 @@ def main():
         fallback_key = latest_on_or_before(mmdd_key, list(all_entries.keys()))
         return (all_entries.get(fallback_key, {}), fallback_key)
 
-    stoic_entry, stoic_key   = get_with_fallback(stoic_all, key_today)
-    dad_entry, dad_key       = get_with_fallback(dad_all, key_today)
+def get_exact(all_entries: Dict[str, Any], mmdd_key: str) -> tuple[dict, str|None]:
+    return (all_entries.get(mmdd_key, {}), mmdd_key if mmdd_key in all_entries else None)
+
+    stoic_entry, stoic_key   = get_exact(stoic_all, key_today)
+    dad_entry, dad_key       = get_exact(dad_all, key_today)
     week_entry, week_key     = get_with_fallback(weekly_all, key_today)
-    journal_entry, j_key     = get_with_fallback(journal_all, key_today)
+    journal_entry, j_key     = get_exact(journal_all, key_today)
 
     # Build email per mode
     sections: List[str] = []
@@ -240,21 +243,13 @@ def main():
 
         # Stoic full (fallback OK)
         if stoic_entry:
-            if stoic_key and stoic_key != key_today:
-                note = f"<div style='font-size:12px;opacity:0.8;margin-bottom:6px;'>Using nearest entry from {stoic_key}.</div>"
-            else:
-                note = ""
-            sections.append(section_html("🧘‍♂️", "Daily Stoic", note + render_blocks(stoic_entry.get("fullText", []))))
+            sections.append(section_html("🧘‍♂️", "Daily Stoic", render_blocks(stoic_entry.get("fullText", []))))
         else:
             sections.append(section_html("🧘‍♂️", "Daily Stoic", "<p>No entries found.</p>"))
 
         # Dad full (fallback OK)
         if dad_entry:
-            if dad_key and dad_key != key_today:
-                note = f"<div style='font-size:12px;opacity:0.8;margin-bottom:6px;'>Using nearest entry from {dad_key}.</div>"
-            else:
-                note = ""
-            sections.append(section_html("👨‍👧", "Daily Dad", note + render_blocks(dad_entry.get("fullText", []))))
+            sections.append(section_html("👨‍👧", "Daily Dad", render_blocks(dad_entry.get("fullText", []))))
         else:
             sections.append(section_html("👨‍👧", "Daily Dad", "<p>No entries found.</p>"))
 
@@ -262,8 +257,7 @@ def main():
         if journal_entry:
             prompt = (journal_entry.get("summary") or "").strip()
             if prompt:
-                pref = f"<div style='font-size:12px;opacity:0.8;margin-bottom:6px;'>Using prompt from {j_key}.</div>" if j_key and j_key != key_today else ""
-                sections.append(section_html("✍️", "Journal Prompt", pref + f"<p style='margin:0;'>{prompt}</p>"))
+                sections.append(section_html("✍️", "Journal Prompt", f"<p style='margin:0;'>{prompt}</p>"))
             else:
                 sections.append(section_html("✍️", "Journal Prompt", "<p>—</p>"))
         else:
@@ -285,7 +279,7 @@ def main():
         items.append(f"<li><strong>Stoic:</strong> {sum_or_dash(stoic_entry)}</li>")
         # Dad
         items.append(f"<li><strong>Dad:</strong> {sum_or_dash(dad_entry)}</li>")
-        digest_html = "<ul style='margin:0 0 0 20px; padding:0 0 0 6px;'>\n" + "\n".join(items) + "\n</ul>"
+        digest_html = "<ul style='margin:0 0 0 20px; padding:0 0 0 6px;>' + "".join(items) + "</ul>"
         html = build_email_html(f"A quick evening summary for {date_str_long}", [digest_html])
 
     # Send
