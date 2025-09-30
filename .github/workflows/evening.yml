@@ -2,7 +2,7 @@ name: Evening Digest
 
 on:
   schedule:
-    # 08:00 UTC ≈ 18:00 AEST (19:00 AEDT)
+    # 08:00 UTC ≈ 18:00 AEST (19:00 AEDT) — adjust if you prefer
     - cron: "0 8 * * *"
   workflow_dispatch:
     inputs:
@@ -21,22 +21,22 @@ jobs:
         with:
           python-version: "3.11"
 
-    - name: Install deps
-      run: pip install --no-cache-dir -r requirements.txt
+      - name: Install deps
+        run: pip install --no-cache-dir
 
       - name: Send evening digest
         env:
+          EMAIL_FROM:      ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO_LIST:   ${{ secrets.EMAIL_TO }}           # reuses your existing EMAIL_TO
+          SMTP_HOST:       ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:       ${{ secrets.SMTP_PORT || '587' }}
+          SMTP_USERNAME:   ${{ secrets.EMAIL_USERNAME }}
+          SMTP_PASSWORD:   ${{ secrets.EMAIL_PASSWORD }}
           STOIC_GLOB:      ${{ secrets.STOIC_GLOB }}
           DAD_GLOB:        ${{ secrets.DAD_GLOB }}
           WEEKLY_FILE:     ${{ secrets.WEEKLY_FILE }}
           JOURNAL_FILE:    ${{ secrets.JOURNAL_FILE }}
-          EMAIL_FROM:      ${{ secrets.EMAIL_FROM }}
-          EMAIL_TO_LIST:   ${{ secrets.EMAIL_TO_LIST }}
-          SMTP_HOST:       ${{ secrets.SMTP_HOST }}
-          SMTP_PORT:       ${{ secrets.SMTP_PORT || '587' }}
-          SMTP_USERNAME:   ${{ secrets.SMTP_USERNAME }}
-          SMTP_PASSWORD:   ${{ secrets.SMTP_PASSWORD }}
-          TZ_OFFSET:       ${{ secrets.TZ_OFFSET }}
+          TZ_OFFSET:       ${{ secrets.TZ_OFFSET || '10' }}
           DATE:            ${{ inputs.date }}
         run: |
           if [[ -n "${DATE}" ]]; then
