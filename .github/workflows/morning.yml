@@ -2,12 +2,11 @@ name: Morning Wisdom
 
 on:
   schedule:
-    # 20:00 UTC ≈ 06:00 AEST (07:00 AEDT) — adjust if you prefer
     - cron: "0 20 * * *"
   workflow_dispatch:
     inputs:
       date:
-        description: "Override date (YYYY-MM-DD); leave blank for today (TZ_OFFSET)"
+        description: "Override date (YYYY-MM-DD); leave blank for today"
         required: false
         type: string
 
@@ -22,25 +21,34 @@ jobs:
           python-version: "3.11"
 
       - name: Install deps
-        run: pip install --no-cache-dir -r requirements.txt
+        run: pip install --no-cache-dir
 
       - name: Send morning email
         env:
-          # Use your existing secrets (no renaming required)
-          EMAIL_FROM:      ${{ secrets.EMAIL_FROM }}
-          EMAIL_TO_LIST:   ${{ secrets.EMAIL_TO }}           # maps existing single/multi to the new script
-          SMTP_HOST:       ${{ secrets.SMTP_SERVER }}        # map to existing SMTP_SERVER
-          SMTP_PORT:       ${{ secrets.SMTP_PORT || '587' }} # default to 587 if empty
-          SMTP_USERNAME:   ${{ secrets.EMAIL_USERNAME }}
-          SMTP_PASSWORD:   ${{ secrets.EMAIL_PASSWORD }}
-          # Content file locations (use defaults if you keep files at repo root)
-          STOIC_GLOB:      ${{ secrets.STOIC_GLOB }}
-          DAD_GLOB:        ${{ secrets.DAD_GLOB }}
-          WEEKLY_FILE:     ${{ secrets.WEEKLY_FILE }}
-          JOURNAL_FILE:    ${{ secrets.JOURNAL_FILE }}
-          # Timezone offset for computing "today" (optional; default 10 if unset)
-          TZ_OFFSET:       ${{ secrets.TZ_OFFSET || '10' }}
-          DATE:            ${{ inputs.date }}
+          # From / To (set both variants)
+          EMAIL_FROM:        ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO_LIST:     ${{ secrets.EMAIL_TO_LIST || secrets.EMAIL_TO }}
+          EMAIL_TO:          ${{ secrets.EMAIL_TO || secrets.EMAIL_TO_LIST }}
+
+          # SMTP host/port/user/pass (set both variants)
+          SMTP_HOST:         ${{ secrets.SMTP_HOST || secrets.SMTP_SERVER }}
+          SMTP_SERVER:       ${{ secrets.SMTP_SERVER || secrets.SMTP_HOST }}
+          SMTP_PORT:         ${{ secrets.SMTP_PORT || '587' }}
+          SMTP_USERNAME:     ${{ secrets.SMTP_USERNAME || secrets.EMAIL_USERNAME }}
+          EMAIL_USERNAME:    ${{ secrets.EMAIL_USERNAME || secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD:     ${{ secrets.SMTP_PASSWORD || secrets.EMAIL_PASSWORD }}
+          EMAIL_PASSWORD:    ${{ secrets.EMAIL_PASSWORD || secrets.SMTP_PASSWORD }}
+
+          # Content locations (optional; leave blank to use defaults)
+          STOIC_GLOB:        ${{ secrets.STOIC_GLOB }}
+          DAD_GLOB:          ${{ secrets.DAD_GLOB }}
+          WEEKLY_FILE:       ${{ secrets.WEEKLY_FILE }}
+          JOURNAL_FILE:      ${{ secrets.JOURNAL_FILE }}
+
+          # Timezone offset (optional)
+          TZ_OFFSET:         ${{ secrets.TZ_OFFSET || '10' }}
+
+          DATE:              ${{ inputs.date }}
         run: |
           if [[ -n "${DATE}" ]]; then
             python app_mailer.py --mode morning --date "${DATE}"
