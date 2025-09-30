@@ -1,14 +1,21 @@
-name: Morning Wisdom
+name: Morning Wisdom (06:10 Sydney)
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    # 19:10 UTC ~= 06:10 AEDT (UTC+11)
+    - cron: "10 19 * * *"
+    # 20:10 UTC ~= 06:10 AEST (UTC+10)
+    - cron: "10 20 * * *"
   workflow_dispatch:
     inputs:
       date:
-        description: "Override date (YYYY-MM-DD); leave blank for today"
+        description: "Override date (YYYY-MM-DD); leave blank for 'today' (based on TZ_OFFSET)"
         required: false
         type: string
+
+concurrency:
+  group: morning-mailer-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   send-morning:
@@ -21,16 +28,29 @@ jobs:
           python-version: "3.11"
 
       - name: Install deps
-        run: pip install --no-cache-dir -r requirements.txt
+        run: pip install --no-cache-dir
 
-      - name: Send morning email
+      - name: Skip unless it's 06:10 local
         env:
-          # From / To (set both variants)
+          TZ_OFFSET: ${{ secrets.TZ_OFFSET || '10' }}
+        run: |
+          set -e
+          offset="${TZ_OFFSET}"
+          now_utc="$(date -u +%s)"
+          secs=$(( now_utc + offset*3600 ))
+          hh=$(date -u -d "@$secs" +%H)
+          mm=$(date -u -d "@$secs" +%M)
+          echo "Computed local time (offset=${offset}) -> ${hh}:${mm}"
+          if [ "${hh}:${mm}" != "06:10" ]; then
+            echo "Not 06:10 local; skipping."
+            exit 0
+          fi
+
+      - name: Send morning email (06:10 local confirmed)
+        env:
           EMAIL_FROM:        ${{ secrets.EMAIL_FROM }}
           EMAIL_TO_LIST:     ${{ secrets.EMAIL_TO_LIST || secrets.EMAIL_TO }}
           EMAIL_TO:          ${{ secrets.EMAIL_TO || secrets.EMAIL_TO_LIST }}
-
-          # SMTP host/port/user/pass (set both variants)
           SMTP_HOST:         ${{ secrets.SMTP_HOST || secrets.SMTP_SERVER }}
           SMTP_SERVER:       ${{ secrets.SMTP_SERVER || secrets.SMTP_HOST }}
           SMTP_PORT:         ${{ secrets.SMTP_PORT || '587' }}
@@ -38,16 +58,7 @@ jobs:
           EMAIL_USERNAME:    ${{ secrets.EMAIL_USERNAME || secrets.SMTP_USERNAME }}
           SMTP_PASSWORD:     ${{ secrets.SMTP_PASSWORD || secrets.EMAIL_PASSWORD }}
           EMAIL_PASSWORD:    ${{ secrets.EMAIL_PASSWORD || secrets.SMTP_PASSWORD }}
-
-          # Content locations (optional; leave blank to use defaults)
-          STOIC_GLOB:        ${{ secrets.STOIC_GLOB }}
-          DAD_GLOB:          ${{ secrets.DAD_GLOB }}
-          WEEKLY_FILE:       ${{ secrets.WEEKLY_FILE }}
-          JOURNAL_FILE:      ${{ secrets.JOURNAL_FILE }}
-
-          # Timezone offset (optional)
           TZ_OFFSET:         ${{ secrets.TZ_OFFSET || '10' }}
-
           DATE:              ${{ inputs.date }}
         run: |
           if [[ -n "${DATE}" ]]; then
