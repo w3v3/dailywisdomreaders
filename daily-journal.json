@@ -1,1741 +1,1100 @@
 {
-    "01-01": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What things are truly in my control?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What things are truly in my control?"
-            }
-        ]
-    },
-    "01-02": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What am I learning and studying for?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What am I learning and studying for?"
-            }
-        ]
-    },
-    "01-03": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What can I say no to so I can say yes to what matters?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What can I say no to so I can say yes to what matters?"
-            }
-        ]
-    },
-    "01-04": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I seeing clearly? Acting generously? Accepting what I can't change?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I seeing clearly? Acting generously? Accepting what I can't change?"
-            }
-        ]
-    },
-    "01-05": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What is my purpose in life?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What is my purpose in life?"
-            }
-        ]
-    },
-    "01-06": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Who am I and what do I stand for?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Who am I and what do I stand for?"
-            }
-        ]
-    },
-    "01-07": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I keep my mind clear from pollution?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I keep my mind clear from pollution?"
-            }
-        ]
-    },
-    "01-08": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What am I addicted to?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What am I addicted to?"
-            }
-        ]
-    },
-    "01-09": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "If I don't control what happens to me, what is left?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "If I don't control what happens to me, what is left?"
-            }
-        ]
-    },
-    "01-10": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where can I find steadiness?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where can I find steadiness?"
-            }
-        ]
-    },
-    "01-11": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What are sources of unsteadiness in my life?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What are sources of unsteadiness in my life?"
-            }
-        ]
-    },
-    "01-12": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where is the path to serenity?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where is the path to serenity?"
-            }
-        ]
-    },
-    "01-13": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What can I put outside my circle of control?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What can I put outside my circle of control?"
-            }
-        ]
-    },
-    "01-14": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What jerks me around?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What jerks me around?"
-            }
-        ]
-    },
-    "01-15": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I staying the course or being steered away?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I staying the course or being steered away?"
-            }
-        ]
-    },
-    "01-16": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What assumptions have I left unquestioned?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What assumptions have I left unquestioned?"
-            }
-        ]
-    },
-    "01-17": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I doing work that matters?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I doing work that matters?"
-            }
-        ]
-    },
-    "01-18": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I find grace and harmony in places others overlook?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I find grace and harmony in places others overlook?"
-            }
-        ]
-    },
-    "01-19": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Good or bad, high or low, do I still have choices?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Good or bad, high or low, do I still have choices?"
-            }
-        ]
-    },
-    "01-20": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I rekindle my principles and start living today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I rekindle my principles and start living today?"
-            }
-        ]
-    },
-    "01-21": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What am I getting out of my journaling ritual?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What am I getting out of my journaling ritual?"
-            }
-        ]
-    },
-    "01-22": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What bad habit did I curb today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What bad habit did I curb today?"
-            }
-        ]
-    },
-    "01-23": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Which of my possessions own me?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Which of my possessions own me?"
-            }
-        ]
-    },
-    "01-24": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I doing deep work?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I doing deep work?"
-            }
-        ]
-    },
-    "01-25": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What do I truly prize?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What do I truly prize?"
-            }
-        ]
-    },
-    "01-26": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What is my mantra today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What is my mantra today?"
-            }
-        ]
-    },
-    "01-27": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What am I studying, practicing, and training?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What am I studying, practicing, and training?"
-            }
-        ]
-    },
-    "01-28": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What ruler do I measure myself against?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What ruler do I measure myself against?"
-            }
-        ]
-    },
-    "01-29": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I keeping a sturdy mind on the task at hand?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I keeping a sturdy mind on the task at hand?"
-            }
-        ]
-    },
-    "01-30": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I content to be clueless about things that don't matter?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I content to be clueless about things that don't matter?"
-            }
-        ]
-    },
-    "01-31": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What healing can philosophy help me find today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What healing can philosophy help me find today?"
-            }
-        ]
-    },
-    "02-01": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I conquer my temper?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I conquer my temper?"
-            }
-        ]
-    },
-    "02-02": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What impulses rob me of self-control?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What impulses rob me of self-control?"
-            }
-        ]
-    },
-    "02-03": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I in control or is my anxiety?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I in control or is my anxiety?"
-            }
-        ]
-    },
-    "02-04": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I cultivating the invincibility of my power to choose?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I cultivating the invincibility of my power to choose?"
-            }
-        ]
-    },
-    "02-05": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I thinking before I act?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I thinking before I act?"
-            }
-        ]
-    },
-    "02-06": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What needless conflict can I avoid?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What needless conflict can I avoid?"
-            }
-        ]
-    },
-    "02-07": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I conquer fear and worry-before they conquer me?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I conquer fear and worry-before they conquer me?"
-            }
-        ]
-    },
-    "02-08": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do my outbursts ever make things better?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do my outbursts ever make things better?"
-            }
-        ]
-    },
-    "02-09": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What if I didn't have an opinion about this?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What if I didn't have an opinion about this?"
-            }
-        ]
-    },
-    "02-10": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What parts of my life are driven by anger?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What parts of my life are driven by anger?"
-            }
-        ]
-    },
-    "02-11": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Is my soul a good ruler or a tyrant?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Is my soul a good ruler or a tyrant?"
-            }
-        ]
-    },
-    "02-12": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "For what have I sold my peace of mind?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "For what have I sold my peace of mind?"
-            }
-        ]
-    },
-    "02-13": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Which of my pleasures are really punishments?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Which of my pleasures are really punishments?"
-            }
-        ]
-    },
-    "02-14": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I do a better job listening to the little voice inside me?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I do a better job listening to the little voice inside me?"
-            }
-        ]
-    },
-    "02-15": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do these strong emotions even make sense?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do these strong emotions even make sense?"
-            }
-        ]
-    },
-    "02-16": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What am I making harder than it needs to be?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What am I making harder than it needs to be?"
-            }
-        ]
-    },
-    "02-17": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What happiness am I putting off that I could have right now?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What happiness am I putting off that I could have right now?"
-            }
-        ]
-    },
-    "02-18": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I in rigorous training against false impressions?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I in rigorous training against false impressions?"
-            }
-        ]
-    },
-    "02-19": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I happy with my portion at the banquet of life?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I happy with my portion at the banquet of life?"
-            }
-        ]
-    },
-    "02-20": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Are the pleasures I'm chasing actually worth it?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Are the pleasures I'm chasing actually worth it?"
-            }
-        ]
-    },
-    "02-21": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What can I stop yearning for?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What can I stop yearning for?"
-            }
-        ]
-    },
-    "02-22": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I certain what I want to say isn't better left unsaid?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I certain what I want to say isn't better left unsaid?"
-            }
-        ]
-    },
-    "02-23": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Why get angry at things, if anger doesn't change it?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Why get angry at things, if anger doesn't change it?"
-            }
-        ]
-    },
-    "02-24": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Why am I telling myself that I've been harmed?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Why am I telling myself that I've been harmed?"
-            }
-        ]
-    },
-    "02-25": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Will I even remember this fight in a few months?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Will I even remember this fight in a few months?"
-            }
-        ]
-    },
-    "02-26": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Why do I need to care that someone else screwed up?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Why do I need to care that someone else screwed up?"
-            }
-        ]
-    },
-    "02-27": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I cultivate indifference to unimportant things?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I cultivate indifference to unimportant things?"
-            }
-        ]
-    },
-    "02-28": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What would happen if I took a second to cool down?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What would happen if I took a second to cool down?"
-            }
-        ]
-    },
-    "02-29": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "A Leap Year Day Mantra: You Can't Always Be Getting What You Want",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "A Leap Year Day Mantra: You Can't Always Be Getting What You Want"
-            }
-        ]
-    },
-    "03-01": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How often do I question the things others take for granted?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How often do I question the things others take for granted?"
-            }
-        ]
-    },
-    "03-02": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I see and assess myself accurately?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I see and assess myself accurately?"
-            }
-        ]
-    },
-    "03-03": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I standing with the philosopher or the mob?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I standing with the philosopher or the mob?"
-            }
-        ]
-    },
-    "03-04": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How many of my limitations are really self-imposed?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How many of my limitations are really self-imposed?"
-            }
-        ]
-    },
-    "03-05": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I really need these things I work so hard for?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I really need these things I work so hard for?"
-            }
-        ]
-    },
-    "03-06": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where am I a loud mouth?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where am I a loud mouth?"
-            }
-        ]
-    },
-    "03-07": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I test my own opinion before trusting it?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I test my own opinion before trusting it?"
-            }
-        ]
-    },
-    "03-08": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I protecting my time and attention?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I protecting my time and attention?"
-            }
-        ]
-    },
-    "03-09": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Does my social circle make me better or worse?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Does my social circle make me better or worse?"
-            }
-        ]
-    },
-    "03-10": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Who is my role model? Why?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Who is my role model? Why?"
-            }
-        ]
-    },
-    "03-11": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where have I traded away freedom? How can I get it back?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where have I traded away freedom? How can I get it back?"
-            }
-        ]
-    },
-    "03-12": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What would change if I looked for other people's good intentions?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What would change if I looked for other people's good intentions?"
-            }
-        ]
-    },
-    "03-13": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Instead of calling it bad luck, can I come to see it as inevitable?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Instead of calling it bad luck, can I come to see it as inevitable?"
-            }
-        ]
-    },
-    "03-14": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How is my arrogance preventing me from learning?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How is my arrogance preventing me from learning?"
-            }
-        ]
-    },
-    "03-15": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What would it be like if I focused entirely on the present moment?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What would it be like if I focused entirely on the present moment?"
-            }
-        ]
-    },
-    "03-16": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I appreciate this mind I have been given?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I appreciate this mind I have been given?"
-            }
-        ]
-    },
-    "03-17": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Are my choices beautiful?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Are my choices beautiful?"
-            }
-        ]
-    },
-    "03-18": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What bad assumptions can I cast out?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What bad assumptions can I cast out?"
-            }
-        ]
-    },
-    "03-19": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What is the real cause of my irritations-external things or my opinions?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What is the real cause of my irritations-external things or my opinions?"
-            }
-        ]
-    },
-    "03-20": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I cultivating the virtue that makes adversity bearable?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I cultivating the virtue that makes adversity bearable?"
-            }
-        ]
-    },
-    "03-21": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What if I sought peace where I am right now instead of in distant lands?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What if I sought peace where I am right now instead of in distant lands?"
-            }
-        ]
-    },
-    "03-22": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Have I confused schooling and education?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Have I confused schooling and education?"
-            }
-        ]
-    },
-    "03-23": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I treat my greedy vices? How can I heal my sickness?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I treat my greedy vices? How can I heal my sickness?"
-            }
-        ]
-    },
-    "03-24": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What philosophical lessons can I find in ordinary things?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What philosophical lessons can I find in ordinary things?"
-            }
-        ]
-    },
-    "03-25": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Would I feel Wealthier if I decreased my wants?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Would I feel Wealthier if I decreased my wants?"
-            }
-        ]
-    },
-    "03-26": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I keeping watch?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I keeping watch?"
-            }
-        ]
-    },
-    "03-27": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What valuable things do I sell too cheaply?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What valuable things do I sell too cheaply?"
-            }
-        ]
-    },
-    "03-28": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Is my training designed to help me rise to the occasion?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Is my training designed to help me rise to the occasion?"
-            }
-        ]
-    },
-    "03-29": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Why do I care so much about impressing people?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Why do I care so much about impressing people?"
-            }
-        ]
-    },
-    "03-30": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "If I'm not ruled by reason, what am I ruled by?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "If I'm not ruled by reason, what am I ruled by?"
-            }
-        ]
-    },
-    "03-31": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I stop chasing the impossible today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I stop chasing the impossible today?"
-            }
-        ]
-    },
-    "04-01": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What thoughts are coloring my world?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What thoughts are coloring my world?"
-            }
-        ]
-    },
-    "04-02": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What can I do today to keep drama away?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What can I do today to keep drama away?"
-            }
-        ]
-    },
-    "04-03": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Are my plans at war with my other plans?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Are my plans at war with my other plans?"
-            }
-        ]
-    },
-    "04-04": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I fight to be the person philosophy wants me to be today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I fight to be the person philosophy wants me to be today?"
-            }
-        ]
-    },
-    "04-05": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What would happen if I stopped to verify my opinions and initial reactions?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What would happen if I stopped to verify my opinions and initial reactions?"
-            }
-        ]
-    },
-    "04-06": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Despite the worst things people do, can I love them anyway?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Despite the worst things people do, can I love them anyway?"
-            }
-        ]
-    },
-    "04-07": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where are my opinions part of the problem?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where are my opinions part of the problem?"
-            }
-        ]
-    },
-    "04-08": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What bad assumptions, habits, or advice have I accepted?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What bad assumptions, habits, or advice have I accepted?"
-            }
-        ]
-    },
-    "04-09": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I step back and test my impressions? What would I find if I did?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I step back and test my impressions? What would I find if I did?"
-            }
-        ]
-    },
-    "04-10": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How do my judgments cause me anguish?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How do my judgments cause me anguish?"
-            }
-        ]
-    },
-    "04-11": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I stop thinking I already know and learn something here?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I stop thinking I already know and learn something here?"
-            }
-        ]
-    },
-    "04-12": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What's the truth about so-called \"honors\" and \"riches\"?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What's the truth about so-called \"honors\" and \"riches\"?"
-            }
-        ]
-    },
-    "04-13": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What would less look like?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What would less look like?"
-            }
-        ]
-    },
-    "04-14": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I balance my life better than the balance sheet of my business?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I balance my life better than the balance sheet of my business?"
-            }
-        ]
-    },
-    "04-15": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Life is full of taxes-am I prepared to pay them?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Life is full of taxes-am I prepared to pay them?"
-            }
-        ]
-    },
-    "04-16": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What can I pay closer attention to today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What can I pay closer attention to today?"
-            }
-        ]
-    },
-    "04-17": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I stop feeling hurt by every little thing?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I stop feeling hurt by every little thing?"
-            }
-        ]
-    },
-    "04-18": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I need to have an opinion about this?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I need to have an opinion about this?"
-            }
-        ]
-    },
-    "04-19": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I leaving room for what might happen?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I leaving room for what might happen?"
-            }
-        ]
-    },
-    "04-20": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What are the few real goods?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What are the few real goods?"
-            }
-        ]
-    },
-    "04-21": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How long can I go without letting my attention slide?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How long can I go without letting my attention slide?"
-            }
-        ]
-    },
-    "04-22": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I self-aware, self-critical, and self-determining?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I self-aware, self-critical, and self-determining?"
-            }
-        ]
-    },
-    "04-23": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How am I caring for my mind?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How am I caring for my mind?"
-            }
-        ]
-    },
-    "04-24": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Nice cars, jewels, fine wine-what are these things really?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Nice cars, jewels, fine wine-what are these things really?"
-            }
-        ]
-    },
-    "04-25": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I willing to admit when I'm wrong?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I willing to admit when I'm wrong?"
-            }
-        ]
-    },
-    "04-26": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I learn from my sparring partners?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I learn from my sparring partners?"
-            }
-        ]
-    },
-    "04-27": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How long does praise really last anyway?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How long does praise really last anyway?"
-            }
-        ]
-    },
-    "04-28": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What power does all my wanting take from me?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What power does all my wanting take from me?"
-            }
-        ]
-    },
-    "04-29": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What do I feel when I look up at the sky?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What do I feel when I look up at the sky?"
-            }
-        ]
-    },
-    "04-30": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do my actions match my character?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do my actions match my character?"
-            }
-        ]
-    },
-    "05-01": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do my actions and my mind match my philosophy?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do my actions and my mind match my philosophy?"
-            }
-        ]
-    },
-    "05-02": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What kind of person do I want to be?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What kind of person do I want to be?"
-            }
-        ]
-    },
-    "05-03": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I showing or telling?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I showing or telling?"
-            }
-        ]
-    },
-    "05-04": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where can I spend money to help others?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where can I spend money to help others?"
-            }
-        ]
-    },
-    "05-05": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Have I made myself a lifelong project?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Have I made myself a lifelong project?"
-            }
-        ]
-    },
-    "05-06": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I seeking the beauty of human excellence?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I seeking the beauty of human excellence?"
-            }
-        ]
-    },
-    "05-07": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What is some good I can get from myself today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What is some good I can get from myself today?"
-            }
-        ]
-    },
-    "05-08": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What evil comes from my own choices?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What evil comes from my own choices?"
-            }
-        ]
-    },
-    "05-09": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Will I seize this day?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Will I seize this day?"
-            }
-        ]
-    },
-    "05-10": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What bold thing can I do today?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What bold thing can I do today?"
-            }
-        ]
-    },
-    "05-11": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where does my lack of self-control create problems?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where does my lack of self-control create problems?"
-            }
-        ]
-    },
-    "05-12": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What would happen if I responded with kindness, no matter what?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What would happen if I responded with kindness, no matter what?"
-            }
-        ]
-    },
-    "05-13": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Which bad habits am I fueling?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Which bad habits am I fueling?"
-            }
-        ]
-    },
-    "05-14": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Are my actions contributing to my well-being?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Are my actions contributing to my well-being?"
-            }
-        ]
-    },
-    "05-15": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What blessings can I count right now?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What blessings can I count right now?"
-            }
-        ]
-    },
-    "05-16": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How am I creating momentum for my good habits?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How am I creating momentum for my good habits?"
-            }
-        ]
-    },
-    "05-17": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Am I on the path to progress?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Am I on the path to progress?"
-            }
-        ]
-    },
-    "05-18": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Is my attention actually on the things at hand?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Is my attention actually on the things at hand?"
-            }
-        ]
-    },
-    "05-19": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where am I doing the opposite of what I should?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where am I doing the opposite of what I should?"
-            }
-        ]
-    },
-    "05-20": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What are the seeds I'm planting and what will they grow?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What are the seeds I'm planting and what will they grow?"
-            }
-        ]
-    },
-    "05-21": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I take a blow and stay in the ring?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I take a blow and stay in the ring?"
-            }
-        ]
-    },
-    "05-22": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I be a good person right here, right now?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I be a good person right here, right now?"
-            }
-        ]
-    },
-    "05-23": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I start living right here, right now?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I start living right here, right now?"
-            }
-        ]
-    },
-    "05-24": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "How can I make my own good fortune?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "How can I make my own good fortune?"
-            }
-        ]
-    },
-    "05-25": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What kind or selfless things will bring me joy?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What kind or selfless things will bring me joy?"
-            }
-        ]
-    },
-    "05-26": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What if I stopped caring what others thought?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What if I stopped caring what others thought?"
-            }
-        ]
-    },
-    "05-27": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What small stuff should I sweat?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What small stuff should I sweat?"
-            }
-        ]
-    },
-    "05-28": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What should I think about before I take action?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What should I think about before I take action?"
-            }
-        ]
-    },
-    "05-29": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "What work nourishes my mind?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "What work nourishes my mind?"
-            }
-        ]
-    },
-    "05-30": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Is my hard work for the right end?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Is my hard work for the right end?"
-            }
-        ]
-    },
-    "05-31": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "If my vocation is to be a good person, am I doing a good job?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "If my vocation is to be a good person, am I doing a good job?"
-            }
-        ]
-    },
-    "06-01": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I have a backup option in mind for all things?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I have a backup option in mind for all things?"
-            }
-        ]
-    },
-    "06-02": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Where have I lost the forest for the trees?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Where have I lost the forest for the trees?"
-            }
-        ]
-    },
-    "06-03": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I have a backup plan for my backup plan?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I have a backup plan for my backup plan?"
-            }
-        ]
-    },
-    "06-04": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Do I realize how tough and strong I am capable of being?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Do I realize how tough and strong I am capable of being?"
-            }
-        ]
-    },
-    "06-05": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Can I blow my own nose-instead of asking someone to do it for me?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Can I blow my own nose-instead of asking someone to do it for me?"
-            }
-        ]
-    },
-    "06-06": {
-        "type": "Daily Journal",
-        "author": "",
-        "summary": "Is this a time to stick or to quit?",
-        "fullText": [
-            {
-                "type": "paragraph",
-                "content": "Is this a time to stick or to quit?"
-            }
-        ]
-    }
+  "02-29": {
+    "text": "A Leap Year Day Mantra: You Can't Always Be Getting What You Want"
+  },
+  "01-01": {
+    "text": "What things are truly in my control?"
+  },
+  "01-02": {
+    "text": "What am I learning and studying for?"
+  },
+ "01-03": {
+    "text": "What can I say no to so I can say yes to what matters?" 
+  },
+  "01-04": {
+    "text": "Am I seeing clearly? Acting generously? Accepting what I can't change?"
+  },
+  "01-05": {
+    "text": "What is my purpose in life?"
+  },
+  "01-06": {
+    "text": "Who am I and what do I stand for?"
+  },
+  "01-07": {
+    "text": "How can I keep my mind clear from pollution?"
+  },
+  "01-08": {
+    "text": "What am I addicted to?"
+  },
+  "01-09": {
+    "text": "If I don't control what happens to me, what is left?"
+  },
+  "01-10": {
+    "text": "Where can I find steadiness?"
+  },
+  "01-11": {
+    "text": "What are sources of unsteadiness in my life?"
+  },
+  "01-12": {
+    "text": "Where is the path to serenity?"
+  },
+  "01-13": {
+    "text": "What can I put outside my circle of control?"
+  },
+  "01-14": {
+    "text": "What jerks me around?"
+  },
+  "01-15": {
+    "text": "Am I staying the course or being steered away?"
+  },
+  "01-16": {
+    "text": "What assumptions have I. left unquestioned?"
+  },
+  "01-17": {
+    "text": "Am I doing work that matters?"
+  },
+  "01-18": {
+    "text": "Can I find grace and harmony in places others overlook?"
+  },
+  "01-19": {
+    "text": "Good or bad, high or low, do I still have choices?"
+  },
+  "01-20": {
+    "text": "How can I rekindle my principles and start living today?"
+  },
+  "01-21": {
+    "text": "What am I getting out of my journaling ritual?"
+  },
+  "01-22": {
+    "text": "What bad habit did l curb today?"
+  },
+  "01-23": {
+    "text": "Which of my possessions own me?"
+  },
+  "01-24": {
+    "text": "Am I doing deep work?"
+  },
+  "01-25": {
+    "text": "What do I truly prize?"
+  },
+  "01-26": {
+    "text": "What is my mantra today?"
+  },
+  "01-27": {
+    "text": "What am I studying, practicing, and training?"
+  },
+  "01-28": {
+    "text": "What ruler do I measure myself against?"
+  },
+  "01-29": {
+    "text": "Am I keeping a sturdy mind on the task at hand?"
+  },
+  "01-30": {
+    "text": "Am I content to be clueless about things that don't matter?"
+  },
+  "01-31": {
+    "text": "What healing can philosophy help me find today?"
+  },
+  "02-01": {
+    "text": "How can I conquer my temper?"
+  },
+  "02-02": {
+    "text": "What impulses rob me of self-control?"
+  },
+  "02-03": {
+    "text": "Am I in control or is my anxiety?"
+  },
+  "02-04": {
+    "text": "Am I cultivating the invincibility of my power to choose?"
+  },
+  "02-05": {
+    "text": "Am I thinking before I act?"
+  },
+  "02-06": {
+    "text": "What needless conflict can I avoid?"
+  },
+  "02-07": {
+    "text": "How can I conquer fear and worry-before they conquer me?"
+  },
+  "02-08": {
+    "text": "Do my outbursts ever make things better?"
+  },
+  "02-09": {
+    "text": "What if I didn't have an opinion about this?"
+  },
+  "02-10": {
+    "text": "What parts of my life are driven by anger?"
+  },
+  "02-11": {
+    "text": "Is my soul a good ruler or a tyrant?"
+  },
+  "02-12": {
+    "text": "For what have I sold my peace of mind?"
+  },
+  "02-13": {
+    "text": "Which of my pleasures are really punishments?"
+  },
+  "02-14": {
+    "text": "How can I do a better job listening to the little voice inside me?"
+  },
+  "02-15": {
+    "text": "Do these strong emotions even make sense?"
+  },
+  "02-16": {
+    "text": "What am I making harder than it needs to be?"
+  },
+  "02-17": {
+    "text": "What happiness am I putting off that I could have right now?"
+  },
+  "02-18": {
+    "text": "Am I in rigorous training against false impressions?"
+  },
+  "02-19": {
+    "text": "Am I happy with my portion at the banquet of life?"
+  },
+  "02-20": {
+    "text": "Are the pleasures I'm chasing actually worth it?"
+  },
+  "02-21": {
+    "text": "What can I stop yearning for?"
+  },
+  "02-22": {
+    "text": "Am I certain what I want to say isn't better left unsaid?"
+  },
+  "02-23": {
+    "text": "Why get angry at things, if anger doesn't change it?"
+  },
+  "02-24": {
+    "text": "Why am I telling myself that I've been harmed?"
+  },
+  "02-25": {
+    "text": "Will I even remember this fight in a few months?"
+  },
+  "02-26": {
+    "text": "Why do I need to care that someone else screwed up?"
+  },
+  "02-27": {
+    "text": "How can I cultivate indifference to unimportant things?"
+  },
+  "02-28": {
+    "text": "What would happen if I took a second to cool down?"
+  },
+  "03-01": {
+    "text": "How often do I question the things others take for granted?"
+  },
+  "03-02": {
+    "text": "Do I see and assess myself accurately?"
+  },
+  "03-03": {
+    "text": "Am l standing with the philosopher or the mob?"
+  },
+  "03-04": {
+    "text": "How many of my limitations are really self-imposed?"
+  },
+  "03-05": {
+    "text": "Do I really need these things I work so hard for?"
+  },
+  "03-06": {
+    "text": "Where am I a loud mouth?"
+  },
+  "03-07": {
+    "text": "Can I test my own opinion before trusting it?"
+  },
+  "03-08": {
+    "text": "Am I protecting my time and attention?"
+  },
+  "03-09": {
+    "text": "Does my social circle make me better or worse?"
+  },
+  "03-10": {
+    "text": "Who is my role model? Why?"
+  },
+  "03-11": {
+    "text": "Where have I traded away freedom? How can I get it back?"
+  },
+  "03-12": {
+    "text": "What would change if I looked for other people's good intentions?"
+  },
+  "03-13": {
+    "text": "Instead of calling it bad luck, can I come to see it as inevitable?"
+  },
+  "03-14": {
+    "text": "How is my arrogance preventing me from learning?"
+  },
+  "03-15": {
+    "text": "What would it be like if l focused entirely on the present moment?"
+  },
+  "03-16": {
+    "text": "Do I appreciate this mind I have been given?"
+  },
+  "03-17": {
+    "text": "Are my choices beautiful?"
+  },
+  "03-18": {
+    "text": "What bad assumptions can I cast out?"
+  },
+  "03-19": {
+    "text": "What is the real cause of my irritations-external things or my opinions?"
+  },
+  "03-20": {
+    "text": "Arn I cultivating the virtue that makes adversity bearable?"
+  },
+  "03-21": {
+    "text": "What if I sought peace where I am right now instead of in distant lands?"
+  },
+  "03-22": {
+    "text": "Have I confused schooling and education?"
+  },
+  "03-23": {
+    "text": "How can I treat my greedy vices? How can I heal my sickness?"
+  },
+  "03-24": {
+    "text": "What philosophical lessons can I find in ordinary things?"
+  },
+  "03-25": {
+    "text": "Would I feel Wealthier if I decreased my wants?"
+  },
+  "03-26": {
+    "text": "Am I keeping watch?"
+  },
+  "03-27": {
+    "text": "What valuable things do I sell too cheaply?"
+  },
+  "03-28": {
+    "text": "Is my training designed to help me rise to the occasion?"
+  },
+  "03-29": {
+    "text": "Why do I care so much about impressing people?"
+  },
+  "03-30": {
+    "text": "If I'm not ruled by reason, what am I ruled by?"
+  },
+  "03-31": {
+    "text": "Can I stop chasing the impossible today?"
+  },
+  "04-01": {
+    "text": "What thoughts are coloring my world?"
+  },
+  "04-02": {
+    "text": "What can l do today to keep drama away?"
+  },
+  "04-03": {
+    "text": "Are my plans at war with my other plans?"
+  },
+  "04-04": {
+    "text": "Can I fight to be the person philosophy wants me to be today?"
+  },
+  "04-05": {
+    "text": "What would happen if I stopped to verify my opinions and initial reactions?"
+  },
+  "04-06": {
+    "text": "Despite the worst things people do, can I love them anyway?"
+  },
+  "04-07": {
+    "text": "Where are my opinions part of the problem?"
+  },
+  "04-08": {
+    "text": "What bad assumptions, habits, or advice have I accepted?"
+  },
+  "04-09": {
+    "text": "Can I step back and test my impressions? What would I find if I did?"
+  },
+  "04-10": {
+    "text": "How do my judgments cause me anguish?"
+  },
+  "04-11": {
+    "text": "Can I stop thinking I already know and learn something here?"
+  },
+  "04-12": {
+    "text": "What's the truth about so-called \"honors\" and \"riches\"?"
+  },
+  "04-13": {
+    "text": "What would Jess look like?"
+  },
+  "04-14": {
+    "text": "Do I balance my life better than the balance sheet of my business?"
+  },
+  "04-15": {
+    "text": "Life is full of taxes-am I prepared to pay them?"
+  },
+  "04-16": {
+    "text": "What can I pay closer attention to today?"
+  },
+  "04-17": {
+    "text": "Can I stop feeling hurt by every little thing?"
+  },
+  "04-18": {
+    "text": "Do I need to have an opinion about this?"
+  },
+  "04-19": {
+    "text": "Am I leaving room for what might happen?"
+  },
+  "04-20": {
+    "text": "What are the few real goods?"
+  },
+  "04-21": {
+    "text": "How long can I go without letting my attention slide?"
+  },
+  "04-22": {
+    "text": "Am I self-aware, self-critical, and self-dete~ining?"
+  },
+  "04-23": {
+    "text": "How am I caring for my mind?"
+  },
+  "04-24": {
+    "text": "Nice cars, jewels, fine wine-what are these things really?"
+  },
+  "04-25": {
+    "text": "Am I willing to admit when I'm wrong?"
+  },
+  "04-26": {
+    "text": "How can I learn from my sparring partners?"
+  },
+  "04-27": {
+    "text": "How long does praise really last anyway?"
+  },
+  "04-28": {
+    "text": "What power does all my wanting take from me?"
+  },
+  "04-29": {
+    "text": "What do I feel when I look up at the sky?"
+  },
+  "04-30": {
+    "text": "Do my actions match my character?"
+  },
+  "05-01": {
+    "text": "Do my actionsï¿½and my mindï¿½match my philosophy?"
+  },
+  "05-02": {
+    "text": "What kind of person do I want to be?"
+  },
+  "05-03": {
+    "text": "Am I showing or telling?"
+  },
+  "05-04": {
+    "text": "Where can I spend money to help others?"
+  },
+  "05-05": {
+    "text": "Have I made myself a lifelong project?"
+  },
+  "05-06": {
+    "text": "Am I seeking the beauty of human excellence?"
+  },
+  "05-07": {
+    "text": "What is some good I can get from myself today?"
+  },
+  "05-08": {
+    "text": "What evil comes from my own choices?"
+  },
+  "05-09": {
+    "text": "Will I seize this day?"
+  },
+  "05-10": {
+    "text": "What bold thing can I do today?"
+  },
+  "05-11": {
+    "text": "Where does my lack of self-control create problems?"
+  },
+  "05-12": {
+    "text": "What would happen if I responded with kindness, no matter what?"
+  },
+  "05-13": {
+    "text": "Which bad habits am I fueling?"
+  },
+  "05-14": {
+    "text": "Are my actions contributing to my wellwbeing?"
+  },
+  "05-15": {
+    "text": "What blessings can I count right now?"
+  },
+  "05-16": {
+    "text": "How am I creating momentum for my good habits?"
+  },
+  "05-17": {
+    "text": "Am I on the path to progress?"
+  },
+  "05-18": {
+    "text": "Is my attention actually on the things at hand?"
+  },
+  "05-19": {
+    "text": "Where am I doing the opposite of what I should?"
+  },
+  "05-20": {
+    "text": "What are the seeds I'm planting and what will they grow?"
+  },
+  "05-21": {
+    "text": "Can I take a blow and stay in the ring?"
+  },
+  "05-22": {
+    "text": "Can I be a good person right here, right now?"
+  },
+  "05-23": {
+    "text": "Can I start living right here, right now?"
+  },
+  "05-24": {
+    "text": "How can I make my own good fortune?"
+  },
+  "05-25": {
+    "text": "What kind or .selfless things will bring me joy?"
+  },
+  "05-26": {
+    "text": "What if I stopped caring what others thought?"
+  },
+  "05-27": {
+    "text": "What small stuff should I sweat?"
+  },
+  "05-28": {
+    "text": "What should I think about before I take action?"
+  },
+  "05-29": {
+    "text": "What work nourishes my mind?"
+  },
+  "05-30": {
+    "text": "Is my hard work for the right end?"
+  },
+  "05-31": {
+    "text": "If my vocation is to be a good person, am I doing a good job?"
+  },
+  "06-01": {
+    "text": "Do I have a backup option in mind for all things?"
+  },
+  "06-02": {
+    "text": "Where have I lost the forest for the trees?"
+  },
+  "06-03": {
+    "text": "Do I have a backup plan for my backup plan?"
+  },
+  "06-04": {
+    "text": "Do I realize how tough and strong I am capable of being?"
+  },
+  "06-05": {
+    "text": "Can I blow my own nose-instead of asking someone to do it for me?"
+  },
+  "06-06": {
+    "text": "Is this a time to stick or to quit?"
+  },
+  "06-07": {
+    "text": "What mentors do I follow-alive or dead?"
+  },
+  "06-08": {
+    "text": "lfl took things patiently, step by step, what could I conquer?"
+  },
+  "06-09": {
+    "text": "What do I need to nip in the bud right now?"
+  },
+  "06-10": {
+    "text": "If someone else was strong enough to do it, why can't I?"
+  },
+  "06-11": {
+    "text": "How often is anger more destructive than what caused it?"
+  },
+  "06-12": {
+    "text": "Am I learning to be adaptable?"
+  },
+  "06-13": {
+    "text": "Am I fulfilling my post in this campaign of life, or sleeping on duty?"
+  },
+  "06-14": {
+    "text": "Do I have a hold on the right handle of this situation?"
+  },
+  "06-15": {
+    "text": "Can I listen more and talk less today?"
+  },
+  "06-16": {
+    "text": "Where do I need help? Who can I ask for it?"
+  },
+  "06-17": {
+    "text": "What am I blaming on chance or luck that's really on me?"
+  },
+  "06-18": {
+    "text": "Am I ready and able?"
+  },
+  "06-19": {
+    "text": "How can I better keep myself in the present moment?"
+  },
+  "06-20": {
+    "text": "Am I the calm one in the room or the one who needs to be calmed?"
+  },
+  "06-21": {
+    "text": "How can I refresh my mind today?"
+  },
+  "06-22": {
+    "text": "Am I actually learning from my failures?"
+  },
+  "06-23": {
+    "text": "Where am I standing in my own way?"
+  },
+  "06-24": {
+    "text": "Do I really need to argue and quarrel so much?"
+  },
+  "06-25": {
+    "text": "Am I expecting the possible, and not just what I want?"
+  },
+  "06-26": {
+    "text": "What thing do I always do that fails and what if I tried the opposite?"
+  },
+  "06-27": {
+    "text": "What can this adversity show me?"
+  },
+  "06-28": {
+    "text": "What can I stop beating myself up over?"
+  },
+  "06-29": {
+    "text": "What can I stop making excuses for?"
+  },
+  "06-30": {
+    "text": "How can I use this obstacle as an opportunity?"
+  },
+  "07-01": {
+    "text": "As a Stoic, what is my job?"
+  },
+  "07-02": {
+    "text": "What is the harder choice I'm avoiding?"
+  },
+  "07-03": {
+    "text": "What if I saw opportunities instead of obligation?"
+  },
+  "07-04": {
+    "text": "Am I keeping the flame of virtue burning?"
+  },
+  "07-05": {
+    "text": "Am I doing the honorable thing?"
+  },
+  "07-06": {
+    "text": "Am I dragging my feet or am l doing my job as a human being?"
+  },
+  "07-07": {
+    "text": "Can I show Odysseus-like determination and perseverance?"
+  },
+  "07-08": {
+    "text": "What painful things can I take responsibility for?"
+  },
+  "07-09": {
+    "text": "Am I on the philosopher's path or winging it?"
+  },
+  "07-10": {
+    "text": "Am I dedicated to my craft?"
+  },
+  "07-11": {
+    "text": "How will I improve myself today?"
+  },
+  "07-12": {
+    "text": "What principles govern my behavior?"
+  },
+  "07-13": {
+    "text": "Am I ready to be a leader? Ready to do my job?"
+  },
+  "07-14": {
+    "text": "Am I becoming more humble or less humble?"
+  },
+  "07-15": {
+    "text": ". Can I do the right thing-even without the promise of rewards?"
+  },
+  "07-16": {
+    "text": "To what service am I committed?"
+  },
+  "07-17": {
+    "text": "Where have I abandoned others?"
+  },
+  "07-18": {
+    "text": "Can I mind my own business and not be distracted by others?"
+  },
+  "07-19": {
+    "text": "What would forgiveness feel like?"
+  },
+  "07-20": {
+    "text": "Am I living a just life?"
+  },
+  "07-21": {
+    "text": "How can I work better with others?"
+  },
+  "07-22": {
+    "text": "Am I acting nobly or grudgingly?"
+  },
+  "07-23": {
+    "text": "How can I make sure none of it goes to my head-good or bad?"
+  },
+  "07-24": {
+    "text": "Can I keep my cool when receiving disturbing news?"
+  },
+  "07-25": {
+    "text": "Where do l let work diminish my quality of life?"
+  },
+  "07-26": {
+    "text": "Where can I pitch in? How can I help?"
+  },
+  "07-27": {
+    "text": "What is better than virtue?"
+  },
+  "07-28": {
+    "text": "Where have I been privileged-and what am I doing with it?"
+  },
+  "07-29": {
+    "text": "Where can I find confidence?"
+  },
+  "07-30": {
+    "text": "Can I seek joy today in purpose, excellence, and duty?"
+  },
+  "07-31": {
+    "text": "Am I neglecting the personal for the professional?"
+  },
+  "08-01": {
+    "text": "Where does my idealism hold me back?"
+  },
+  "08-02": {
+    "text": "How can l make do with the tough situations I face?"
+  },
+  "08-03": {
+    "text": "Can I get the most out of where I am right here, right now?"
+  },
+  "08-04": {
+    "text": "How can I avoid fruitless emotions today?"
+  },
+  "08-05": {
+    "text": "Can I hold my tongue today?"
+  },
+  "08-06": {
+    "text": "What small progress can I make today?"
+  },
+  "08-07": {
+    "text": "Can I live well no matter how trying the environment?"
+  },
+  "08-08": {
+    "text": "What's the smallest step I can take toward a big thing today?"
+  },
+  "08-09": {
+    "text": "Can I keep things simple today? Straightforward?"
+  },
+  "08-10": {
+    "text": "Where is perfectionism holding me back?"
+  },
+  "08-11": {
+    "text": "Are my habits getting better?"
+  },
+  "08-12": {
+    "text": "Am I making this philosophy my own by putting it into practice?"
+  },
+  "08-13": {
+    "text": "What troubles can I solve in advance?"
+  },
+  "08-14": {
+    "text": "How will philosophy help steer my course today?"
+  },
+  "08-15": {
+    "text": "Will decisions I make today be based on true judgments?"
+  },
+  "08-16": {
+    "text": "How will I turn today's adversities into advantages?"
+  },
+  "08-17": {
+    "text": "Can I go a whole day without blaming others?"
+  },
+  "08-18": {
+    "text": "Where can I better play to my strengths?"
+  },
+  "08-19": {
+    "text": "What inessential things can I eliminate from my life?"
+  },
+  "08-20": {
+    "text": "How well is my soul dressed?"
+  },
+  "08-21": {
+    "text": "What if I stopped worrying about the future and enjoyed the present?"
+  },
+  "08-22": {
+    "text": "What small stuff can t stop sweating?"
+  },
+  "08-23": {
+    "text": "Where do I have too much of a good thing?"
+  },
+  "08-24": {
+    "text": "What can I learn from others-even the people I don't like?"
+  },
+  "08-25": {
+    "text": "What new path can I blaze today?"
+  },
+  "08-26": {
+    "text": "What potential losses can I anticipate in advance?"
+  },
+  "08-27": {
+    "text": "Where can I learn to laugh rather than cry?"
+  },
+  "08-28": {
+    "text": "What luxuries can I practice not needing?"
+  },
+  "08-29": {
+    "text": "What wants can I eliminate today?"
+  },
+  "08-30": {
+    "text": "Can I do today's duties with both courage and confidence?"
+  },
+  "08-31": {
+    "text": "Where have I done others wrong?"
+  },
+  "09-01": {
+    "text": "Am I working to make my soul stronger than any Fortune?"
+  },
+  "09-02": {
+    "text": "What's the most painful part of Stoicism for you?"
+  },
+  "09-03": {
+    "text": "How am I preparing in the off-season for what is to come?"
+  },
+  "09-04": {
+    "text": "How can I see these difficulties as a lesson and a test?"
+  },
+  "09-05": {
+    "text": "What is truly mine?"
+  },
+  "09-06": {
+    "text": "If I lost my freedom, would it break me?"
+  },
+  "09-07": {
+    "text": "How will I use the power of choice today?"
+  },
+  "09-08": {
+    "text": "Am I prepared for my bubble to be burst?"
+  },
+  "09-09": {
+    "text": "Do I rule my fears, or do they rule me?"
+  },
+  "09-10": {
+    "text": "How can I prepare for the losses I fear?"
+  },
+  "09-11": {
+    "text": "Where can I do with less today?"
+  },
+  "09-12": {
+    "text": "Where am I putting on airs?"
+  },
+  "09-13": {
+    "text": "How strong is my Inner Citadel?"
+  },
+  "09-14": {
+    "text": "Are you praying-or demanding?"
+  },
+  "09-15": {
+    "text": "Are you sizzle or steak?"
+  },
+  "09-16": {
+    "text": "Will I triumph over the disasters and panics Of the day?"
+  },
+  "09-17": {
+    "text": "Can I resist giving in to hatersï¿½and hating them in return?"
+  },
+  "09-18": {
+    "text": "Can I let the pains of life pass without adding to them?"
+  },
+  "09-19": {
+    "text": "Am I flexible enough to change my mind and accept feedback?"
+  },
+  "09-20": {
+    "text": "How ready am l for unexpected attacks?"
+  },
+  "09-21": {
+    "text": "Can I keep life's rhythm no matter the interruption?"
+  },
+  "09-22": {
+    "text": "How will today's difficulties show my character?"
+  },
+  "09-23": {
+    "text": "How is my training coming?"
+  },
+  "09-24": {
+    "text": "Have I thought about all that might happen?"
+  },
+  "09-25": {
+    "text": "What am I a slave to?"
+  },
+  "09-26": {
+    "text": "What idle leisure can I replace with something more fulfilling?"
+  },
+  "09-27": {
+    "text": "What do prosperity and difficulty each reveal about me?"
+  },
+  "09-28": {
+    "text": "How will I respond to the things that happen today?"
+  },
+  "09-29": {
+    "text": "Where are my eyes bigger than my stomach?"
+  },
+  "09-30": {
+    "text": "How can I strengthen my Inner Citadel?"
+  },
+  "10-01": {
+    "text": "How will I let my virtues shine today?"
+  },
+  "10-02": {
+    "text": "If wisdom is the most valuable asset, how have I invested in it?"
+  },
+  "10-03": {
+    "text": "Do I live as if we are all one-all part of the same whole?"
+  },
+  "10-04": {
+    "text": "Will my actions today be good for all concerned?"
+  },
+  "10-05": {
+    "text": "What do I say that's better left unsaid?"
+  },
+  "10-06": {
+    "text": "Who else can I root for-other than myself?"
+  },
+  "10-07": {
+    "text": "Why does my wrongdoing hurt me most of all?"
+  },
+  "10-08": {
+    "text": "What is more pleasing than wisdom?"
+  },
+  "10-09": {
+    "text": "Have I set my standards and am I using them?"
+  },
+  "10-10": {
+    "text": "What do my principles tell me about persisting and resisting?"
+  },
+  "10-11": {
+    "text": "Is honesty my default setting?"
+  },
+  "10-12": {
+    "text": "Instead of seeking love can I give it first?"
+  },
+  "10-13": {
+    "text": "Has revenge ever made anything better?"
+  },
+  "10-14": {
+    "text": "What if instead of getting mad, I offered to help?"
+  },
+  "10-15": {
+    "text": "Will I give people the benefit of the doubt?"
+  },
+  "10-16": {
+    "text": "How can I share this philosophy that has helped me so much?"
+  },
+  "10-17": {
+    "text": "Where can I show other people kindness?"
+  },
+  "10-18": {
+    "text": "Am I avoiding false friendships and bad influences?"
+  },
+  "10-19": {
+    "text": "Which good habit can I use today to drive out a bad one?"
+  },
+  "10-20": {
+    "text": "Do my principles show themselves in my life?"
+  },
+  "10-21": {
+    "text": "Can I do the right thing and not care about credit?"
+  },
+  "10-22": {
+    "text": "Am I actually improving-or am I just chasing vanity?"
+  },
+  "10-23": {
+    "text": "Am I displaying my best qualities?"
+  },
+  "10-24": {
+    "text": "What goodness can I find inside myself? Can I bring it to the surface?"
+  },
+  "10-25": {
+    "text": "What are my tasks in this life?"
+  },
+  "10-26": {
+    "text": "Are my goals natural, moral, and rational?"
+  },
+  "10-27": {
+    "text": "What bad behaviors or choices have come back to haunt me?"
+  },
+  "10-28": {
+    "text": "What can I do to be part of something bigger than myself?"
+  },
+  "10-29": {
+    "text": "How can I improve my character?"
+  },
+  "10-30": {
+    "text": "What time can I claw back for myself-and how will I use it?"
+  },
+  "10-31": {
+    "text": "What good turns can be done today?"
+  },
+  "11-01": {
+    "text": "Can I love everything that happens today?"
+  },
+  "11-02": {
+    "text": "Can I make my choices and accept whatever will be?"
+  },
+  "11-03": {
+    "text": "How can this be exactly what I needed?"
+  },
+  "11-04": {
+    "text": "Is change really so bad? Is the status quo really so good?"
+  },
+  "11-05": {
+    "text": "Is my character producing a well-flowing life?"
+  },
+  "11-06": {
+    "text": "Am I prepared for the randomness of fate and luck?"
+  },
+  "11-07": {
+    "text": "Are you trying to master yourself-or other people?"
+  },
+  "11-08": {
+    "text": "What's my role in the play of life?"
+  },
+  "11-09": {
+    "text": "What principles will steer me through the flow of change?"
+  },
+  "11-10": {
+    "text": "What will remain when all else passes away?"
+  },
+  "11-11": {
+    "text": "What false judgment can I Wipe away today?"
+  },
+  "11-12": {
+    "text": "Can the buck stop with me today?"
+  },
+  "11-13": {
+    "text": "Does complaining accomplish anything?"
+  },
+  "11-14": {
+    "text": "Will I add negative thoughts on top of my troubles?"
+  },
+  "11-15": {
+    "text": "Will I embrace the flow of change today?"
+  },
+  "11-16": {
+    "text": "Can I cease both hoping for and fearing certain outcomes?"
+  },
+  "11-17": {
+    "text": "Is it really my place to judge other people?"
+  },
+  "11-18": {
+    "text": "Am I practicing good Stoic thoughts?"
+  },
+  "11-19": {
+    "text": "Will I accept the situation and still fight to do and be good?"
+  },
+  "11-20": {
+    "text": "Where can I find timelessness in every moment?"
+  },
+  "11-21": {
+    "text": "How can I make this minuteï¿½right nowï¿½be enough?"
+  },
+  "11-22": {
+    "text": "What am I irrationally afraid of losing?"
+  },
+  "11-23": {
+    "text": "Why is my power to choose so resilient and adaptable?"
+  },
+  "11-24": {
+    "text": "How can I see my loved ones as gifts not possessions?"
+  },
+  "11-25": {
+    "text": "Is more money really going to make things better?"
+  },
+  "11-26": {
+    "text": "What petty comparisons am I bothering myself with?"
+  },
+  "11-27": {
+    "text": "What sources of unrest can l tune out?"
+  },
+  "11-28": {
+    "text": "What's bothering me that I haven't spoken up about?"
+  },
+  "11-29": {
+    "text": "How can I be less agitated-and complain about it less, too?"
+  },
+  "11-30": {
+    "text": "Am I ready to accept the pull of the universe?"
+  },
+  "12-01": {
+    "text": "If I lived today as if it were my last, what would I do?"
+  },
+  "12-02": {
+    "text": "How can I make my actions count?"
+  },
+  "12-03": {
+    "text": "What practical problems am I solving with this philosophy?"
+  },
+  "12-04": {
+    "text": "What do I truly own?"
+  },
+  "12-05": {
+    "text": "What unpleasant thoughts can I face and use to my advantage?"
+  },
+  "12-06": {
+    "text": "What can I do to live now, while I still can?"
+  },
+  "12-07": {
+    "text": "Can I love the hand Fate deals me?"
+  },
+  "12-08": {
+    "text": "Are there any feelings I need to face?"
+  },
+  "12-09": {
+    "text": "Are you saying no enough?"
+  },
+  "12-10": {
+    "text": "What are you getting in return for the time you spend so freely?"
+  },
+  "12-11": {
+    "text": "Are you living with dignity and courage?"
+  },
+  "12-12": {
+    "text": "Will I keep the rhythm of life, no matter the interruptions?"
+  },
+  "12-13": {
+    "text": "Can I be grateful for the time I've been given?"
+  },
+  "12-14": {
+    "text": "What will my life be a testament to?"
+  },
+  "12-15": {
+    "text": "Am I going to get a little bit better today?"
+  },
+  "12-16": {
+    "text": "What am I doing to build my self-confidence?"
+  },
+  "12-17": {
+    "text": "How well do I really know myself?"
+  },
+  "12-18": {
+    "text": "The end for us all is dear, but is my purpose?"
+  },
+  "12-19": {
+    "text": "What can I focus on that is much, much bigger than me?"
+  },
+  "12-20": {
+    "text": "What am I really so afraid of?"
+  },
+  "12-21": {
+    "text": "How can I make the most of today-and in doing so, my life?"
+  },
+  "12-22": {
+    "text": "What wisdom will I create today?"
+  },
+  "12-23": {
+    "text": "If I relaxed my tight grip on life, what would happen?"
+  },
+  "12-24": {
+    "text": "Can I consume less to make more room for virtue?"
+  },
+  "12-25": {
+    "text": "Where can I find reinvigoration and balance?"
+  },
+  "12-26": {
+    "text": "Where am I wasting life?"
+  },
+  "12-27": {
+    "text": "Is my soul stronger than my body?"
+  },
+  "12-28": {
+    "text": "In a hundred years, who will remember or be remembered?"
+  },
+  "12-29": {
+    "text": "What am I grateful for?"
+  },
+  "12-30": {
+    "text": "How can I bring a calm mind to tough situations?"
+  },
+  "12-31": {
+    "text": "How will I turn these words into works?"
+  }
 }
-
