@@ -9,9 +9,15 @@ Daily Readings Mailer (Auto-discovery + Year-agnostic)
 - Journal: morning shows today's prompt if present, else latest prior; evening excludes.
 - Uses existing SMTP/EMAIL secrets: EMAIL_FROM, EMAIL_TO_LIST or EMAIL_TO, SMTP_HOST/SMTP_SERVER, SMTP_PORT, SMTP_USERNAME/EMAIL_USERNAME, SMTP_PASSWORD/EMAIL_PASSWORD.
 """
-import os, smtplib, argparse, json
-from pathlib import Path
+
+# ===== Imports (consolidated) =====
+import os
+import re
+import json
+import smtplib
+import argparse
 from email.mime.text import MIMEText
+from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from typing import Dict, Any, List, Optional, Tuple
 
@@ -50,9 +56,10 @@ def local_today(tz_offset: int) -> datetime.date:
 # --------- File auto-discovery ---------
 def find_content_files(root: Path) -> Tuple[List[Path], List[Path], Optional[Path], Optional[Path]]:
     """Return (stoic_files, dad_files, weekly_file, journal_file) discovered recursively."""
-    stoic, dad = [], []
-    weekly = None
-    journal = None
+    stoic: List[Path] = []
+    dad: List[Path] = []
+    weekly: Optional[Path] = None
+    journal: Optional[Path] = None
     for p in root.rglob("*.json"):
         name = p.name.lower()
         if name.startswith("daily-stoic-") and name.endswith(".json"):
@@ -139,7 +146,6 @@ def first_sentence(text: str, max_chars: int = 240) -> str:
     if not t: return ""
     if len(t) <= max_chars: return t
     cut = t[:max_chars]
-    # try break at last sentence end
     for i in range(len(cut)-1, -1, -1):
         if cut[i] in ".!?":
             return cut[:i+1].strip()
