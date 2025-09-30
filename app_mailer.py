@@ -10,6 +10,7 @@ Daily Readings Mailer (Auto-discovery + Year-agnostic)
 - Uses existing SMTP/EMAIL secrets: EMAIL_FROM, EMAIL_TO_LIST or EMAIL_TO, SMTP_HOST/SMTP_SERVER, SMTP_PORT, SMTP_USERNAME/EMAIL_USERNAME, SMTP_PASSWORD/EMAIL_PASSWORD.
 """
 import os, smtplib, argparse, json
+from pathlib import Path
 from email.mime.text import MIMEText
 from datetime import datetime, timezone, timedelta
 from typing import Dict, Any, List, Optional, Tuple
