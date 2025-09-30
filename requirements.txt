@@ -1,0 +1,4 @@
+# requirements.txt
+# This project uses only the Python standard library.
+# No third-party packages are required for app_mailer.py.
+# Tested with Python 3.11
