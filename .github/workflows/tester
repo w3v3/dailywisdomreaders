@@ -1,0 +1,12 @@
+- name: Sanity check Dad files
+  run: |
+    echo "Repo files:" && ls -1
+    echo "--- dad files ---"
+    find . -iname 'daily-dad-*.json' -maxdepth 3 -print
+    echo "--- check for today's key ---"
+    KEY="$(date -u +%m-%d)"; echo "Expecting key: $KEY"
+    # If you ran with a manual date, set it explicitly:
+    # KEY="10-05"
+    for f in $(find . -iname 'daily-dad-*.json' -maxdepth 3); do
+      echo "== $f =="; (jq -r "has(\"$KEY\")" "$f" 2>/dev/null || echo "jq missing")
+    done
