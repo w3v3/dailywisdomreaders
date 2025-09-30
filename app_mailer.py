@@ -162,7 +162,8 @@ def main():
     ap.add_argument("--smtp-port", type=int, default=int(os.getenv("SMTP_PORT", str(DEFAULT_SMTP_PORT))))
     ap.add_argument("--smtp-user", default=os.getenv("SMTP_USERNAME", ""))
     ap.add_argument("--smtp-pass", default=os.getenv("SMTP_PASSWORD", ""))
-    ap.add_argument("--tz-offset", type=int, default=int(os.getenv("TZ_OFFSET", str(DEFAULT_TZ_OFFSET))))
+    ap.add_argument("--tz-offset", type=int, default=int(os.getenv("TZ_OFFSET") or DEFAULT_TZ_OFFSET)
+)
     args = ap.parse_args()
 
     # Resolve recipients
