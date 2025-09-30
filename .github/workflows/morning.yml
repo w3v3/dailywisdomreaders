@@ -28,7 +28,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install deps
-        run: pip install --no-cache-dir
+        run: pip install --no-cache-dir -r requirements.txt
 
       - name: Skip unless it's 06:10 local
         env:
